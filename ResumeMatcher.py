@@ -12,7 +12,7 @@ from langchain.callbacks import get_openai_callback
 from dotenv import load_dotenv
 load_dotenv()
 import os
-API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = st.secrets["OPENAI_API_KEY"]
 
 #PDF 문서에서 텍스트를 추출
 def get_pdf_text(pdf_docs):
